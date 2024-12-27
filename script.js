@@ -89,7 +89,7 @@ class Player {
         this.frameX = 0;
         this.frameY = 0;
 
-        // Handle image loading issues
+        
         if (!this.image.complete) {
             this.image.onload = () => console.log('Bull image loaded');
             this.image.onerror = () => console.error('Failed to load bull image');
@@ -233,7 +233,7 @@ canvas.addEventListener('mousemove', (e) => {
     }
 });
 
-// Initialize and animate the game
+
 const game = new Game(canvas);
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -241,5 +241,5 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-// Ensure background image is loaded before starting animation
+
 background.onload = () => animate();
