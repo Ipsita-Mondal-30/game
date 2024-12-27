@@ -37,7 +37,7 @@ class Game {
                     overlap = true;
                 }
             });
-            const margin = 50; // Adjust as needed for the spacing
+            const margin = 50; 
             if (
                 !overlap &&
                 testObstacle.spriteX > 0 &&
